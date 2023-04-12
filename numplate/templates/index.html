@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Home Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    header{
+        height: 70vh;
+    }
+    main{
+        height: 30vh;
+    }
+    a{
+        margin-right: 150px;
+        height: 50px;
+        width: 100px;
+    }
+  </style>
+</head>
+<body>
+    <header class="container">
+    <h1>Welcome to My Home Page</h1>
+</header>
+<main class="container">
+    <div class="container">
+    <p>Choose an option below:</p>
+    <div>
+      <a href="{{ url_for('start') }}" class="btn btn-primary">Start</a>
+      <a href="{{ url_for('live') }}" class="btn btn-primary">Live</a>
+      <a href="{{ url_for('how_to_use') }}" class="btn btn-primary">How to Use</a>
+    </div>
+  </div>
+</main>
+  <footer class="bg-light py-3">
+    <div class="container">
+      <p>Copyright &copy; 2023
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
